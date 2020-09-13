@@ -478,6 +478,9 @@ form input {
     padding-bottom: 10px;
     margin-right: 70px;
     outline: none;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0%;
 }
 
 form {
@@ -513,6 +516,7 @@ form input:focus {
 
 .checkbox-agree {
     margin: 20px 0 120px;
+    -webkit-appearance: none;
 }
 
 .call-back-bord {
@@ -819,6 +823,7 @@ footer>div:last-of-type a:hover {
     }
     .call-me-back img {
         width: 35px;
+        margin: auto;
     }
     .process {
         margin: 45px auto 65px;
@@ -1490,6 +1495,9 @@ footer>div:last-of-type a:hover {
     .top-header {
         flex-wrap: wrap;
     }
+    .order-now>div {
+        height: 180px;
+    }
     .menu-list {
         margin: 5px 0;
     }
@@ -1722,9 +1730,6 @@ footer>div:last-of-type a:hover {
     .car-description ul {
         max-width: 100px;
     }
-    .car-description ul li:last-of-type {
-        text-align: center;
-    }
     .reviews h2 {
         padding: 20px 0 0px;
     }
@@ -1847,7 +1852,7 @@ footer>div:last-of-type a:hover {
     }
     .number-process {
         font-size: 23px;
-        margin: 15px 10px 43px 0px;
+        margin: 15px 10px 45px 0px;
     }
     .prices-options {
         width: 300px;
@@ -1909,6 +1914,7 @@ footer>div:last-of-type a:hover {
         width: 80px;
         font-size: 13px;
         height: 35px;
+        text-align: center;
     }
 }
 
