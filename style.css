@@ -1,0 +1,2002 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* шапка */
+
+header {
+    width: 100%;
+    height: 650px;
+    background-color: #FED100;
+    position: relative;
+    z-index: 0;
+}
+
+.header-container {
+    width: 1310px;
+    margin: auto;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.menu-list {
+    padding: 0;
+}
+
+.menu-list li {
+    display: inline;
+    list-style: none;
+    font-size: 18px;
+}
+
+.menu-list li:hover {
+    text-shadow: 0 0 0.5px black;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 45px;
+}
+
+.menu-list li a {
+    color: black;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.tel a {
+    font-size: 24px;
+    border-bottom: 1px solid;
+    color: black;
+}
+
+.tel a:hover {
+    text-shadow: 0 0 1px black;
+}
+
+.header-main {
+    margin-top: 65px;
+}
+
+.header-main h1 {
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0;
+    line-height: 70px;
+}
+
+.header-main h2 {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.to-order {
+    width: 304px;
+    height: 60px;
+    background: #FF352B;
+    font-weight: 600;
+    font-size: 24px;
+    color: #F2F2F2;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.to-order:hover {
+    background: #fc0e02;
+}
+
+.bord {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 5px;
+    top: 5px;
+    border: 2px solid #F2F2F2;
+    z-index: -1;
+}
+
+.header-car {
+    position: absolute;
+    width: 499px;
+    height: 300px;
+    right: 12%;
+    top: 180px;
+}
+
+.header-man {
+    position: absolute;
+    width: 381px;
+    height: 550px;
+    right: 34%;
+    top: 100px;
+}
+
+.header-advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 77px;
+    width: 560px;
+}
+
+.header-advantages p img {
+    float: left;
+    margin-right: 10px;
+}
+
+.header-advantages p {
+    white-space: nowrap;
+}
+
+.call-me-back {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 350px;
+    top: 492px;
+    background: rgba(61, 155, 233, 0.8);
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.call-me-back::before {
+    content: "";
+    background: rgba(61, 155, 233, 0.3);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    left: -10px;
+    bottom: -10px;
+    z-index: -1;
+    animation: move 1s infinite linear;
+}
+
+.call-me-back:hover {
+    background: rgba(71, 167, 245, 0.8);
+}
+
+.call-me-back:hover::before {
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* как это происходит? */
+
+.process {
+    margin: 95px auto 105px;
+    width: 1100px;
+}
+
+.process h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 65px;
+}
+
+.number-process {
+    float: left;
+    font-weight: 300;
+    font-size: 50px;
+    margin: 15px 40px 25px 0;
+    text-shadow: 2px 0px 0px #FED100;
+    ;
+}
+
+.process-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.process-list div {
+    width: 500px;
+}
+
+/* цены  */
+
+.prices {
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.prices h2 {
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+}
+
+.prices h3 {
+    font-size: 24px;
+    color: #333333;
+    margin: 15px 0 60px 0;
+}
+
+.prices-conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 1320px;
+    margin: auto;
+}
+
+.prices-options {
+    width: 420px;
+    height: 580px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    padding: 85px;
+}
+
+.prices-options:hover {
+    border: 1px solid #FED100;
+}
+
+.prices-options p:not(:first-child) {
+    margin-bottom: 25px;
+}
+
+.prices-options p:last-of-type {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 60px 0 50px 0;
+}
+
+.prices-options p:first-child {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 60px;
+}
+
+.checkout {
+    width: 250px;
+    height: 50px;
+    background: #FED100;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.checkout:hover {
+    background: #ffc400;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* автопарк */
+
+.car-park {
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.car-park h2 {
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+}
+
+.car-park h3 {
+    font-size: 24px;
+    color: #333333;
+    margin: 15px 0 60px 0;
+}
+
+.img-car {
+    width: 641px;
+    height: 453px;
+}
+
+.buttons-options-car button {
+    width: 201px;
+    height: 50px;
+    float: left;
+    border: 1px solid #EBEBEB;
+    outline: none;
+    background: white;
+    font-size: 20px;
+    margin: 0 10px 60px;
+}
+
+.buttons-options-car button:hover {
+    border: 1px solid #FED100;
+}
+
+.buttons-options-car {
+    margin: 0 auto;
+    width: 700px;
+}
+
+.car-description {
+    text-align: left;
+}
+
+.car-description h3 {
+    margin: 0 0 35px 0;
+}
+
+.car-description ul {
+    padding: 0;
+}
+
+.car-description ul li {
+    list-style: none;
+    padding: 0 0 28px 0;
+}
+
+.car-description ul li:before {
+    content: "\2713";
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.car-description .checkout {
+    margin-top: 7px;
+}
+
+.car-description-conteiner {
+    display: flex;
+    width: 1250px;
+    clear: both;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons-options-car .active {
+    border: 1px solid #FED100;
+}
+
+.button-right:hover, .button-left:hover {
+    cursor: pointer;
+}
+
+/* отзывы */
+
+.reviews {
+    width: 100%;
+    background: #FED100;
+    margin-bottom: 125px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.reviews h2 {
+    padding: 80px 0 60px;
+    font-size: 30px;
+    color: #333333;
+}
+
+.review {
+    text-align: left;
+    width: 420px;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.review .name {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.review .date {
+    margin: 0 10px 25px 0;
+    float: left;
+}
+
+.read-completely {
+    text-decoration: underline;
+}
+
+.read-completely:hover {
+    cursor: pointer;
+}
+
+.review-text {
+    clear: both;
+}
+
+.button-all-reviews {
+    border: 1px solid #333333;
+    outline: none;
+    background: #FED100;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin: 50px auto 80px;
+    display: block;
+}
+
+.button-all-reviews a {
+    color: black;
+}
+
+.button-all-reviews:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* закажи сейчас */
+
+.order-now {
+    width: 1010px;
+    margin: auto;
+    text-align: left;
+}
+
+.order-now>div {
+    vertical-align: top;
+    height: 150px;
+}
+
+.order-now h2 {
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+}
+
+.order-now p {
+    margin-bottom: 50px;
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-right: 70px;
+    outline: none;
+}
+
+form {
+    float: left;
+}
+
+form input:focus {
+    border-bottom: 2px solid #FED100;
+}
+
+.button-call-back {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background: #FF352B;
+    border: none;
+    outline: none;
+    color: white;
+    position: relative;
+}
+
+.button-call-back:hover {
+    background: #fc0e02;
+}
+
+.call-back-container {
+    float: right;
+}
+
+.call-back-container label {
+    font-size: 12px;
+}
+
+.checkbox-agree {
+    margin: 20px 0 120px;
+}
+
+.call-back-bord {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 8px;
+    top: 8px;
+    border: 1px solid #FED100;
+    z-index: -1;
+}
+
+/* контакты */
+
+.contact {
+    position: relative;
+    top: 0;
+    height: 720px;
+}
+
+.contact>.yandex-map {
+    width: 100%;
+    height: 720px;
+}
+
+.movee-contact {
+    position: absolute;
+    width: 360px;
+    height: 320px;
+    left: 15%;
+    top: 20%;
+    background: #FFFFFF;
+    padding: 40px;
+}
+
+.movee-contact h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.movee-contact ul {
+    padding: 0;
+}
+
+.movee-contact ul li {
+    list-style: none;
+    padding: 0 0 15px 0;
+}
+
+.movee-contact ul li:nth-child(3) {
+    text-decoration: underline;
+}
+
+.movee-contact ul li:before {
+    content: "\2713";
+    padding-right: 15px;
+    font-weight: 600;
+    color: #FED100;
+    font-size: 20px;
+    text-decoration: underline white;
+}
+
+.icon-contact img {
+    width: 20px;
+}
+
+.icon-contact a:not(:last-child) {
+    margin-right: 25px;
+}
+
+.icon-contact {
+    text-align: end;
+    margin-top: 55px;
+}
+
+/* подвал */
+
+footer {
+    background: #FED100;
+    padding: 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-terms h2, .footer-terms p:first-of-type {
+    margin-bottom: 40px;
+}
+
+.footer-terms h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.section-guide ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-guide ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.section-guide ul li:hover {
+    text-shadow: 0 0 0.5px black;
+}
+
+.section-guide ul li a {
+    color: black;
+    font-size: 20px;
+}
+
+.contacts-for-communication>a {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.contacts-for-communication>a:hover {
+    text-shadow: 0 0 0.5px black;
+}
+
+.contacts-for-communication .icon-contact {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contacts-for-communication {
+    text-align: center;
+}
+
+footer div:last-of-type button {
+    width: 250px;
+    height: 44px;
+    border: 1px solid #333333;
+    font-size: 20px;
+    background: #FED100;
+    outline: none;
+}
+
+footer div:last-of-type button:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer>div:last-of-type a {
+    color: black;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    display: block;
+    margin-top: 10px;
+}
+
+footer>div:last-of-type {
+    display: flex;
+    flex-basis: 180px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer>div:last-of-type a:hover {
+    text-shadow: 0 0 0.5px black;
+}
+
+@media (max-width: 1600px) {
+    footer {
+        padding: 100px 200px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .header-car {
+        right: 5%;
+    }
+    .header-man {
+        right: 25%;
+    }
+    .call-me-back {
+        right: 150px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header-container {
+        width: 1100px;
+    }
+    .header-car {
+        right: 2%;
+    }
+    .header-man {
+        right: 15%;
+    }
+    .call-me-back {
+        right: 50px;
+    }
+    .prices-conteiner {
+        width: 1000px;
+    }
+    .prices-options {
+        width: 300px;
+        height: 430px;
+        padding: 40px;
+    }
+    .prices-options p:not(:first-child) {
+        margin-bottom: 15px;
+    }
+    .prices-options p:last-of-type {
+        font-size: 25px;
+        margin: 60px 0 50px 0;
+    }
+    .prices-options p:first-child {
+        font-size: 20px;
+        margin: 0 0 60px;
+    }
+    .buttons-options-car {
+        width: 600px;
+    }
+    .buttons-options-car button {
+        width: 180px;
+    }
+    .car-description-conteiner {
+        width: 1000px;
+    }
+    .img-car {
+        width: 540px;
+        height: 380px;
+    }
+    .review {
+        width: 280px;
+        padding: 25px;
+    }
+    .review .name {
+        font-size: 22px;
+        margin: 0 0 10px 0;
+    }
+    .review .date {
+        font-size: 14px;
+    }
+    footer {
+        padding: 100px 100px;
+    }
+    .movee-contact {
+        width: 310px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        height: 550px;
+    }
+    .header-main {
+        margin-top: 35px;
+    }
+    .header-container {
+        width: 800px;
+    }
+    .menu-list li:not(:last-child) {
+        margin-right: 25px;
+    }
+    .tel a {
+        font-size: 20px;
+    }
+    .header-main h1 {
+        font-size: 60px;
+    }
+    .header-main h2 {
+        font-size: 25px;
+    }
+    .to-order {
+        width: 250px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    .header-advantages {
+        margin-top: 55px;
+        width: 450px;
+    }
+    .header-advantages p img {
+        height: 35px;
+        margin-right: 5px;
+    }
+    .header-advantages>p {
+        font-size: 14px;
+    }
+    .header-car {
+        width: 350px;
+        height: 255px;
+    }
+    .header-man {
+        width: 330px;
+        height: 450px;
+    }
+    .call-me-back {
+        width: 70px;
+        height: 70px;
+        top: 440px;
+    }
+    .call-me-back::before {
+        width: 90px;
+        height: 90px;
+    }
+    .call-me-back img {
+        width: 35px;
+    }
+    .process {
+        margin: 45px auto 65px;
+        width: 800px;
+    }
+    .process-list div {
+        width: 370px;
+    }
+    .number-process {
+        font-size: 45px;
+        margin: 15px 20px 75px 0;
+    }
+    .process h2 {
+        font-size: 28px;
+        margin-bottom: 45px;
+    }
+    .prices h2 {
+        font-size: 28px;
+    }
+    .prices h3 {
+        font-size: 20px;
+        margin: 10px 0 40px 0;
+    }
+    .prices-conteiner {
+        width: 800px;
+    }
+    .prices-options {
+        width: 250px;
+        height: 350px;
+        padding: 20px;
+    }
+    .checkout {
+        width: 170px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .prices-options p:first-child {
+        font-size: 18px;
+        margin: 0 0 40px;
+    }
+    .prices-options p:last-of-type {
+        margin: 45px 0 35px 0;
+    }
+    .car-park h2 {
+        font-size: 28px;
+    }
+    .car-park h3 {
+        font-size: 20px;
+        margin: 5px 0 30px 0;
+    }
+    .buttons-options-car button {
+        width: 150px;
+    }
+    .buttons-options-car button {
+        height: 45px;
+        font-size: 18px;
+        margin: 0 25px 45px;
+    }
+    .car-description-conteiner {
+        width: 800px;
+    }
+    .img-car {
+        width: 430px;
+        height: 325px;
+    }
+    .car-description ul li {
+        padding: 0 0 20px 0px;
+        font-size: 15px;
+    }
+    .car-park h3 {
+        font-size: 18px;
+    }
+    .checkout {
+        width: 150px;
+        height: 40px;
+        font-size: 17px;
+    }
+    .review {
+        width: 235px;
+    }
+    .reviews h2 {
+        padding: 35px 0 20px;
+    }
+    .button-all-reviews {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        margin: 15px auto 30px;
+    }
+    .order-now {
+        width: 800px;
+    }
+    form input {
+        width: 250px;
+        font-size: 18px;
+        padding-bottom: 8px;
+        margin-right: 35px;
+    }
+    .button-call-back {
+        width: 200px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .call-back-container label {
+        font-size: 10px;
+    }
+    .movee-contact {
+        width: 280px;
+        height: 250px;
+        padding: 20px;
+    }
+    .movee-contact h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .movee-contact ul li {
+        list-style: none;
+        padding: 0px 0 10px 0;
+        font-size: 14px;
+    }
+    .icon-contact {
+        margin-top: 35px;
+    }
+    footer {
+        padding: 80px 40px;
+    }
+    .contact {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-list li {
+        font-size: 15px;
+    }
+    header {
+        height: 430px;
+    }
+    .logo {
+        font-size: 26px;
+    }
+    .header-main h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .header-advantages {
+        margin-top: 35px;
+        width: 400px;
+    }
+    .header-main {
+        margin-top: 20px;
+    }
+    .to-order {
+        width: 220px;
+        height: 45px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .header-advantages p img {
+        height: 30px;
+    }
+    .header-advantages>p {
+        font-size: 12px;
+    }
+    .header-man {
+        width: 240px;
+        height: 330px;
+        right: 17%;
+    }
+    .header-car {
+        width: 290px;
+        height: 210px;
+        top: 135px;
+    }
+    .call-me-back {
+        width: 50px;
+        height: 50px;
+        top: 350px;
+    }
+    .call-me-back::before {
+        width: 70px;
+        height: 70px;
+    }
+    .call-me-back img {
+        width: 25px;
+    }
+    .process h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .process {
+        width: 600px;
+    }
+    .process-list div {
+        width: 600px;
+    }
+    .number-process {
+        font-size: 35px;
+        margin: 15px 20px 10px 0;
+    }
+    .process-list div p:last-of-type {
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .process-list div h3 {
+        margin-bottom: 5px;
+    }
+    .reviews h2 {
+        font-size: 25px;
+        padding: 35px 0 0px;
+    }
+    .review {
+        width: 600px;
+        padding: 10px;
+    }
+    .review .date {
+        margin: 0 10px 10px 0;
+    }
+    .reviews {
+        margin-bottom: 80px;
+    }
+    .order-now {
+        width: 700px;
+    }
+    form input {
+        width: 200px;
+    }
+    .contact {
+        height: 500px;
+    }
+    .icon-contact a:not(:last-child) {
+        margin-right: 10px;
+    }
+    .contacts-for-communication>a {
+        font-size: 15px;
+    }
+    .contacts-for-communication .icon-contact {
+        margin-bottom: 5px;
+    }
+    footer div:last-of-type button {
+        width: 180px;
+        height: 35px;
+        font-size: 15px;
+    }
+    footer>div:last-of-type a {
+        font-size: 17px;
+    }
+    .section-guide ul li a {
+        font-size: 17px;
+    }
+    .footer-terms h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .footer-terms h2, .footer-terms p:first-of-type {
+        margin-bottom: 20px;
+    }
+    .footer-terms p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .top-header {
+        padding-top: 20px;
+    }
+    .header-container {
+        width: 600px;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .tel a {
+        font-size: 18px;
+    }
+    .menu-list li {
+        font-size: 13px;
+    }
+    .menu-list li:not(:last-child) {
+        margin-right: 15px;
+    }
+    .header-main {
+        margin-top: 10px;
+    }
+    .header-main h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .header-main h2 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    header {
+        height: 350px;
+    }
+    .to-order {
+        width: 180px;
+    }
+    .header-advantages p img {
+        height: 24px;
+    }
+    .header-advantages>p {
+        font-size: 10px;
+    }
+    .header-advantages {
+        margin-top: 30px;
+        width: 320px;
+    }
+    .header-advantages p img {
+        margin-right: 3px;
+    }
+    .header-man {
+        width: 195px;
+        height: 260px;
+        top: 90px;
+    }
+    .header-car {
+        width: 200px;
+        height: 140px;
+    }
+    .call-me-back {
+        top: 275px;
+    }
+    .call-me-back::before {
+        width: 60px;
+        height: 60px;
+        left: -5px;
+        bottom: -5px;
+    }
+    .process {
+        margin: 35px auto 60px;
+        width: 450px;
+    }
+    .process h2 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+    .number-process {
+        font-size: 30px;
+        margin: 15px 20px 20px 0px;
+    }
+    .prices h2 {
+        font-size: 23px;
+    }
+    .prices h3 {
+        font-size: 17px;
+        margin: 5px 0 25px 0;
+    }
+    .prices-conteiner {
+        width: 500px;
+    }
+    .prices-options {
+        width: 150px;
+        height: 250px;
+        padding: 10px;
+    }
+    .prices-options p:first-child {
+        font-size: 15px;
+        margin: 0 0 20px;
+    }
+    .prices-options p:not(:first-of-type):not(:last-of-type) {
+        font-size: 12px;
+    }
+    .prices-options p:last-of-type {
+        margin: 25px 0 15px 0;
+        font-size: 20px;
+    }
+    .checkout {
+        width: 90px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .process-list div p:last-of-type {
+        margin-bottom: 0;
+    }
+    .car-park h2 {
+        font-size: 23px;
+    }
+    .car-description-conteiner {
+        width: 500px;
+    }
+    .img-car {
+        width: 200px;
+        height: 160px;
+    }
+    .car-description h3 {
+        margin: 5px 0 5px 0;
+    }
+    .car-description ul li:before {
+        padding-right: 10px;
+    }
+    .car-description ul li {
+        padding: 0px 0 15px 0px;
+        font-size: 13px;
+    }
+    .buttons-options-car {
+        width: 390px;
+    }
+    .buttons-options-car button {
+        height: 45px;
+        font-size: 16px;
+        margin: 0 10px 35px;
+    }
+    .buttons-options-car button {
+        width: 110px;
+    }
+    .reviews h2 {
+        font-size: 23px;
+        padding: 35px 0 0px;
+    }
+    .review .name {
+        font-size: 20px;
+        margin: 0 0 5px 0;
+    }
+    .review .date {
+        font-size: 12px;
+        margin: 0 5px 0px 0;
+    }
+    .review img {
+        width: 13px;
+    }
+    .review-text {
+        font-size: 14px;
+        margin: 5px 0 5px 0;
+    }
+    .read-completely {
+        font-size: 14px;
+        margin: 5px 0 5px 0;
+    }
+    .button-all-reviews {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        margin: 5px auto 10px;
+    }
+    .order-now {
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    .order-now h2 {
+        font-size: 25px;
+    }
+    .order-now p {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    form {
+        width: 300px;
+    }
+    form input {
+        width: 250px;
+        font-size: 16px;
+        padding-bottom: 5px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .call-back-container {
+        float: none;
+    }
+    .button-call-back {
+        width: 160px;
+        font-size: 16px;
+    }
+    .call-back-container label {
+        font-size: 12px;
+    }
+    .checkbox-agree {
+        margin: 45px 0 0px;
+    }
+    .contact {
+        height: 400px;
+    }
+    .movee-contact {
+        width: 220px;
+        height: 200px;
+        padding: 15px;
+    }
+    .movee-contact h2 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .movee-contact ul li {
+        padding: 0px 0 5px 0;
+        font-size: 14px;
+    }
+    .movee-contact ul li:before {
+        padding-right: 5px;
+    }
+    .movee-contact ul li:first-child:before {
+        float: left;
+    }
+    .icon-contact img {
+        width: 17px;
+    }
+    footer {
+        padding: 50px 50px;
+        display: block;
+    }
+    .footer-terms {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-terms p {
+        margin: 0;
+    }
+    .section-guide ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-guide {
+        width: 470px;
+        padding: 80px 0;
+        margin: auto;
+    }
+    .contacts-for-communication {
+        display: flex;
+        float: left;
+        align-items: end;
+    }
+    .contacts-for-communication>a {
+        margin-top: 0px;
+    }
+    .icon-contact img {
+        width: 20px;
+    }
+    .contacts-for-communication .icon-contact {
+        margin-right: 15px;
+    }
+    footer>div:last-of-type {
+        justify-content: left;
+        margin-top: 20px;
+    }
+    footer div:last-of-type button {
+        margin-right: 15px;
+    }
+    footer>div:last-of-type {
+        padding-left: 20px;
+        margin: 0;
+        align-items: end;
+    }
+    footer>div:last-of-type a {
+        margin-top: 0px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 730px) {
+    footer {
+        padding: 30px 30px;
+    }
+    .contact {
+        height: 350px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header-container {
+        width: 500px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .tel a {
+        font-size: 16px;
+    }
+    .menu-list li:not(:last-child) {
+        margin-right: 10px;
+    }
+    .menu-list li {
+        font-size: 12px;
+    }
+    .header-main h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .header-main h2 {
+        font-size: 18px;
+    }
+    .to-order {
+        width: 160px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .header-advantages {
+        width: 200px;
+        flex-wrap: wrap;
+    }
+    .header-advantages>p {
+        margin: 5px 0;
+    }
+    .header-man {
+        right: 22%;
+    }
+    .process h2 {
+        font-size: 20px;
+    }
+    .process-list div h3 {
+        margin-bottom: 5px;
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .process-list div p:last-of-type {
+        font-size: 12px;
+    }
+    .prices h2 {
+        font-size: 20px;
+    }
+    .prices h3 {
+        font-size: 16px;
+    }
+    .review {
+        width: 400px;
+    }
+    .reviews .review:last-of-type {
+        display: none;
+    }
+    .reviews h2 {
+        font-size: 20px;
+    }
+    .button-all-reviews {
+        width: 100px;
+        margin: 15px auto 10px;
+    }
+    .movee-contact {
+        width: 195px;
+        height: 200px;
+        padding: 15px;
+        left: 12%;
+    }
+    .icon-contact img {
+        width: 18px;
+    }
+    footer>div:last-of-type {
+        display: inline-flex;
+        padding-left: 0px;
+        padding-top: 10px;
+        align-items: baseline;
+    }
+    .footer-terms {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-terms h2 {
+        width: 100%;
+    }
+    .footer-terms p:first-of-type {
+        margin-right: 25px;
+    }
+    .footer-terms p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-container {
+        width: 400px;
+    }
+    .logo {
+        font-size: 15px;
+    }
+    .tel a {
+        font-size: 13px;
+    }
+    .menu {
+        order: 1;
+        margin: auto;
+    }
+    .top-header {
+        flex-wrap: wrap;
+    }
+    .menu-list {
+        margin: 5px 0;
+    }
+    .tel {
+        margin-bottom: 10px;
+    }
+    .header-main h1 {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .header-main h2 {
+        font-size: 16px;
+    }
+    .to-order {
+        width: 140px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .header-advantages {
+        width: 160px;
+    }
+    header {
+        height: 370px;
+    }
+    .header-man {
+        width: 175px;
+        height: 230px;
+        top: 140px;
+        right: 22%;
+    }
+    .header-advantages p img {
+        width: 30px;
+        margin-right: 10px;
+    }
+    .header-car {
+        width: 170px;
+        height: 130px;
+        top: 160px;
+    }
+    .call-me-back {
+        top: 300px;
+        right: 35px;
+    }
+    .process {
+        margin: 35px auto 60px;
+        width: 350px;
+    }
+    .prices-conteiner {
+        width: 350px;
+        display: block;
+    }
+    .prices-options {
+        width: 350px;
+        margin-bottom: 10px;
+        height: 165px;
+    }
+    .prices-options p:first-child {
+        font-size: 17px;
+    }
+    .prices-options p:not(:first-of-type):not(:last-of-type) {
+        display: inline-block;
+        padding: 4px;
+    }
+    .prices-options p:first-child {
+        margin: 0px 0 0px;
+    }
+    .prices-options p:last-of-type {
+        margin: 0px 0 15px 0;
+    }
+    .car-park h2 {
+        font-size: 20px;
+    }
+    .car-park h3 {
+        font-size: 16px;
+    }
+    .car-description-conteiner {
+        width: 400px;
+    }
+    .img-car {
+        width: 150px;
+        height: 130px;
+    }
+    .button-right, .button-left {
+        height: 15px;
+    }
+    .car-description ul li:before {
+        padding-right: 5px;
+    }
+    .buttons-options-car button {
+        width: 100px;
+        font-size: 15px;
+    }
+    .buttons-options-car {
+        width: 360px;
+    }
+    .order-now {
+        width: 400px;
+    }
+    .order-now h2 {
+        font-size: 23px;
+    }
+    .reviews {
+        margin-bottom: 40px;
+    }
+    .button-call-back {
+        width: 140px;
+        font-size: 15px;
+    }
+    .checkbox-agree {
+        padding: 0 0 0px 30px;
+        margin: 25px 0 0px;
+        text-align: end;
+        width: 200px;
+        position: relative;
+        top: -12px;
+    }
+    .call-back-container {
+        display: inline-flex;
+        align-items: baseline;
+    }
+    .order-now {
+        margin-bottom: 45px;
+    }
+    .movee-contact {
+        width: 160px;
+        height: 170px;
+        padding: 10px;
+    }
+    .movee-contact h2 {
+        font-size: 16px;
+    }
+    .movee-contact ul li {
+        font-size: 11px;
+    }
+    .icon-contact img {
+        width: 15px;
+    }
+    .icon-contact {
+        margin-top: 20px;
+    }
+    .section-guide {
+        padding: 70px 0;
+    }
+    .section-guide ul li a {
+        font-size: 15px;
+    }
+    .header-main h2 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        height: 340px;
+    }
+    .header-container {
+        width: 340px;
+    }
+    .header-man {
+        width: 150px;
+        height: 195px;
+        top: 145px;
+    }
+    .header-main h1 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .header-advantages {
+        margin-top: 10px;
+    }
+    .header-car {
+        width: 130px;
+        height: 100px;
+        top: 170px;
+        right: 7%;
+    }
+    .header-main h2 {
+        font-size: 14px;
+        font-weight: 500;
+        order: 2;
+    }
+    .to-order {
+        width: 90px;
+        font-size: 14px;
+        order: 1;
+    }
+    .header-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .call-me-back {
+        top: 280px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    .call-me-back::before {
+        width: 50px;
+        height: 50px;
+    }
+    .call-me-back img {
+        width: 20px;
+    }
+    .prices h3 {
+        padding: 0 5px;
+    }
+    .car-park h3 {
+        padding: 0 5px;
+    }
+    .car-description-conteiner {
+        width: 330px;
+    }
+    .car-description ul li {
+        padding: 0px 0 10px 0px;
+        font-size: 11px;
+    }
+    .car-park h3 {
+        font-size: 15px;
+    }
+    .img-car {
+        width: 120px;
+        height: 100px;
+    }
+    .button-right, .button-left {
+        height: 12px;
+    }
+    .car-description ul {
+        max-width: 100px;
+    }
+    .car-description ul li:last-of-type {
+        text-align: center;
+    }
+    .reviews h2 {
+        padding: 20px 0 0px;
+    }
+    .review .name {
+        font-size: 18px;
+    }
+    .review {
+        width: 300px;
+    }
+    .review img {
+        width: 11px;
+        padding-bottom: 2px;
+    }
+    .review-text {
+        font-size: 12px;
+    }
+    .read-completely {
+        font-size: 12px;
+    }
+    .button-all-reviews {
+        width: 70px;
+        font-size: 10px;
+        height: 30px;
+        margin: 10px auto 0px;
+    }
+    .order-now {
+        width: 300px;
+    }
+    .order-now h2 {
+        font-size: 24px;
+    }
+    .order-now p {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .button-call-back {
+        width: 120px;
+        font-size: 12px;
+    }
+    .checkbox-agree {
+        padding: 0 0 0px 30px;
+        width: 135px;
+    }
+    .contacts-for-communication {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .section-guide ul {
+        display: block;
+    }
+    footer div:last-of-type button {
+        width: 103px;
+        height: 35px;
+        margin-left: 40px;
+        font-size: 11px;
+    }
+    .section-guide {
+        width: auto;
+    }
+    .section-guide {
+        padding: 0 0;
+        float: left;
+    }
+    footer {
+        overflow: hidden;
+    }
+    .footer-terms {
+        margin-bottom: 35px;
+    }
+    .footer-terms {
+        justify-content: space-between;
+    }
+    .footer-terms p {
+        font-size: 12px;
+    }
+    .contacts-for-communication>a {
+        font-size: 14px;
+    }
+    footer>div:last-of-type a {
+        font-size: 14px;
+    }
+    .icon-contact a:not(:last-child) {
+        margin-right: 5px;
+    }
+    footer div:last-of-type button {
+        width: 88px;
+        height: 30px;
+    }
+    .number-process {
+        font-size: 26px;
+        margin: 15px 10px 20px 0px;
+    }
+    .prices {
+        margin: 0 auto 70px;
+    }
+    form input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-container {
+        width: 310px;
+    }
+    .header-man {
+        right: 19%;
+    }
+    .header-advantages p img {
+        width: 25px;
+        margin-right: 5px;
+    }
+    .header-car {
+        right: 4%;
+    }
+    .call-me-back {
+        right: 20px;
+    }
+    .process {
+        width: 270px;
+    }
+    .number-process {
+        font-size: 23px;
+        margin: 15px 10px 43px 0px;
+    }
+    .prices-options {
+        width: 300px;
+        height: 190px;
+        margin: 0 auto 10px;
+    }
+    .prices-options p:not(:last-of-type):not(:first-of-type) {
+        margin: 0;
+        font-size: 13px;
+    }
+    .prices-options p:first-child {
+        margin: 0px 0 15px;
+    }
+    .prices-options p:last-of-type {
+        margin: 15px 0 15px 0;
+    }
+    .order-now h2 {
+        font-size: 20px;
+        width: 190px;
+    }
+    .contact {
+        height: 260px;
+    }
+    .movee-contact {
+        top: 10%;
+    }
+    .footer-terms h2 {
+        font-size: 20px;
+    }
+    .footer-terms p:first-of-type {
+        margin-right: 15px;
+        font-size: 11px;
+    }
+    .contacts-for-communication {
+        display: block;
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+    footer>div:last-of-type {
+        display: inline-block;
+    }
+    footer>div:last-of-type {
+        padding-left: 60px;
+        padding-top: 30px;
+    }
+    footer>div:last-of-type a {
+        margin-top: 10px;
+    }
+    footer div:last-of-type button {
+        margin-left: 0px;
+    }
+    .contacts-for-communication .icon-contact {
+        text-align: left;
+    }
+    .buttons-options-car {
+        width: 300px;
+    }
+    .buttons-options-car button {
+        width: 80px;
+        font-size: 13px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-container {
+        width: 290px;
+    }
+    .header-man {
+        width: 135px;
+        height: 175px;
+        top: 165px;
+        right: 21%;
+    }
+    .prices-conteiner {
+        width: 270px;
+    }
+    .car-description-conteiner {
+        width: 280px;
+    }
+    .review {
+        width: 250px;
+    }
+    .order-now {
+        width: 250px;
+    }
+    .movee-contact {
+        width: 130px;
+        height: 140px;
+    }
+    .contact {
+        height: 230px;
+    }
+    .footer-terms p {
+        font-size: 9px;
+    }
+    .footer-terms p:first-of-type {
+        margin-right: 10px;
+        font-size: 9px;
+    }
+    .prices-options {
+        width: 250px;
+    }
+    .call-me-back {
+        right: 15px;
+        top: 290px;
+        width: 30px;
+        height: 30px;
+    }
+    .call-me-back::before {
+        width: 40px;
+        height: 40px;
+    }
+    .call-me-back img {
+        width: 15px;
+    }
+    .header-man {
+        right: 17%;
+    }
+    .header-car {
+        right: 2%;
+    }
+    .img-car {
+        width: 100px;
+        height: 80px;
+    }
+    .checkbox-agree {
+        padding: 0 0 0px 10px;
+        width: 120px;
+    }
+    .movee-contact {
+        left: 15%;
+    }
+    .movee-contact ul li:before {
+        font-size: 12px;
+    }
+    .movee-contact ul li:before {
+        padding-bottom: 15px;
+    }
+    .icon-contact img {
+        width: 12px;
+    }
+    .movee-contact ul {
+       margin-bottom: 10px;
+    }
+    .icon-contact {
+        margin-top: 0px;
+    }
+    .movee-contact {
+        height: 150px;
+    }
+}
