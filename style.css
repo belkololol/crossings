@@ -588,7 +588,7 @@ form input:focus {
     font-weight: 600;
     color: #FED100;
     font-size: 20px;
-    text-decoration: underline white;
+    display: inline-block;
 }
 
 .icon-contact img {
@@ -1283,7 +1283,7 @@ footer>div:last-of-type a:hover {
         margin-top: 10px;
     }
     form {
-        width: 300px;
+            width: auto;
     }
     form input {
         width: 250px;
@@ -1444,7 +1444,7 @@ footer>div:last-of-type a:hover {
         font-size: 20px;
     }
     .prices h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .review {
         width: 400px;
@@ -1717,10 +1717,10 @@ footer>div:last-of-type a:hover {
         width: 20px;
     }
     .prices h3 {
-        padding: 0 5px;
+        padding: 0 10px;
     }
     .car-park h3 {
-        padding: 0 5px;
+        padding: 0 10px;
     }
     .car-description-conteiner {
         width: 330px;
@@ -1930,7 +1930,7 @@ footer>div:last-of-type a:hover {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 320px) {
     .header-container {
         width: 290px;
     }

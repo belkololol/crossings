@@ -49,8 +49,6 @@ buttonLeft.forEach(button => {
     })
 })
 
-
-
 function checkActiveClass() {
     if (gazelButton.classList.contains('active')) {
         heelConteiner.classList.add('hidden');
@@ -93,3 +91,17 @@ function trimString(size, maxSize) {
 trimString(250, 700);
 
 
+// плавный скролл
+
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+anchors.forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const blockID = el.getAttribute('href');
+        document.querySelector(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        })
+    })
+})
