@@ -155,6 +155,11 @@ header {
     outline: none;
 }
 
+.call-me-back img {
+    display: block;
+    width: 53px;
+}
+
 .call-me-back::before {
     content: "";
     background: rgba(61, 155, 233, 0.3);
@@ -1704,7 +1709,6 @@ footer>div:last-of-type a:hover {
     }
     .call-me-back img {
         width: 20px;
-        display: block;
     }
     .prices h3 {
         padding: 0 5px;
