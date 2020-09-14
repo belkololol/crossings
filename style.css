@@ -1628,6 +1628,7 @@ footer>div:last-of-type a:hover {
         margin-top: 15px;
         display: flex;
         float: left;
+        align-items: baseline;
     }
     .order-now {
         margin-bottom: 45px;
