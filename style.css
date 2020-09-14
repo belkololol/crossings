@@ -1704,6 +1704,7 @@ footer>div:last-of-type a:hover {
     }
     .call-me-back img {
         width: 20px;
+        display: block;
     }
     .prices h3 {
         padding: 0 5px;
