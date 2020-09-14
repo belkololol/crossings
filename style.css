@@ -332,6 +332,7 @@ header {
     background: white;
     font-size: 20px;
     margin: 0 10px 60px;
+    text-align: center;
 }
 
 .buttons-options-car button:hover {
@@ -1617,15 +1618,17 @@ footer>div:last-of-type a:hover {
     }
     .checkbox-agree {
         padding: 0 0 0px 30px;
-        margin: 25px 0 0px;
+        margin: 0;
         text-align: end;
         width: 200px;
         position: relative;
         top: -12px;
     }
     .call-back-container {
-        display: inline-flex;
-        align-items: baseline;
+            margin-top: 15px;
+            display: flex;
+            float: left;
+        }
     }
     .order-now {
         margin-bottom: 45px;
