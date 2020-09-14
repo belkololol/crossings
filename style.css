@@ -153,11 +153,14 @@ header {
     border: none;
     border-radius: 50%;
     outline: none;
+    align-items: center;
+    display: flex;
 }
 
 .call-me-back img {
     display: block;
     width: 53px;
+    margin: auto;
 }
 
 .call-me-back::before {
@@ -828,7 +831,6 @@ footer>div:last-of-type a:hover {
     }
     .call-me-back img {
         width: 35px;
-        margin: auto;
     }
     .process {
         margin: 45px auto 65px;
@@ -1015,7 +1017,6 @@ footer>div:last-of-type a:hover {
     }
     .call-me-back img {
         width: 25px;
-        display: block;
     }
     .process h2 {
         font-size: 25px;
