@@ -1625,10 +1625,9 @@ footer>div:last-of-type a:hover {
         top: -12px;
     }
     .call-back-container {
-            margin-top: 15px;
-            display: flex;
-            float: left;
-        }
+        margin-top: 15px;
+        display: flex;
+        float: left;
     }
     .order-now {
         margin-bottom: 45px;
@@ -2009,7 +2008,7 @@ footer>div:last-of-type a:hover {
         width: 12px;
     }
     .movee-contact ul {
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     .icon-contact {
         margin-top: 0px;
